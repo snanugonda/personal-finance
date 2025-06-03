@@ -1,0 +1,34 @@
+[
+  {
+    "AccountName": "Main Checking USD",
+    "AccountType": "checking",
+    "InitialBalance": 2500.00,
+    "Currency": "USD",
+    "Limit_or_OriginalAmount": null,
+    "InterestRate": null
+  },
+  {
+    "AccountName": "Savings Alpha EUR",
+    "AccountType": "savings",
+    "InitialBalance": 10000.00,
+    "Currency": "EUR",
+    "Limit_or_OriginalAmount": null,
+    "InterestRate": null
+  },
+  {
+    "AccountName": "Credit Card X USD",
+    "AccountType": "credit_card",
+    "InitialBalance": 250.75,
+    "Currency": "USD",
+    "Limit_or_OriginalAmount": 5000,
+    "InterestRate": 0.199
+  },
+  {
+    "AccountName": "Mortgage Loan EUR",
+    "AccountType": "loan",
+    "InitialBalance": 180000,
+    "Currency": "EUR",
+    "Limit_or_OriginalAmount": 200000,
+    "InterestRate": 0.035
+  }
+]

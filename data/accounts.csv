@@ -1,8 +1,0 @@
-AccountName,AccountType,InitialBalance,Limit_or_OriginalAmount,InterestRate
-Main Checking,checking,1500.00,,
-Savings Alpha,savings,10000.00,,
-Credit Card X,credit_card,250.75,5000,0.199
-Mortgage,loan,180000,200000,0.035
-Investment Fund,investment,25000,,
-Emergency Fund,savings,5000,,
-Student Loan,loan,15000,20000,0.045

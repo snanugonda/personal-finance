@@ -1,0 +1,20 @@
+{
+  "Housing": {
+    "budgeted_amount_monthly": {"USD": 1200.00, "EUR": 950.00}
+  },
+  "Groceries": {
+    "budgeted_amount_monthly": {"USD": 300.00, "EUR": 250.00}
+  },
+  "Shopping": {
+    "budgeted_amount_monthly": {"USD": 150.00}
+  },
+  "Utilities": {
+    "budgeted_amount_monthly": {"USD": 70.00, "EUR": 50.00}
+  },
+  "Loan Payment": {
+    "budgeted_amount_monthly": {"EUR": 200.00}
+  },
+  "Food/Drinks": {
+    "budgeted_amount_monthly": {"USD": 100.00, "EUR": 80.00}
+  }
+}

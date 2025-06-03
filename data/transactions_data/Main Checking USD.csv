@@ -1,0 +1,7 @@
+Date,Description,Amount,Currency,Category
+2023-10-01,Salary Deposit,3000.00,USD,Income
+2023-10-01,Rent Payment,-1200.00,USD,Housing
+2023-10-02,Groceries at Whole Foods,-85.50,USD,Groceries
+2023-10-03,Amazon Purchase,-120.00,USD,Shopping
+2023-10-10,Electricity Bill,-70.00,USD,Utilities
+2023-10-15,Salary Deposit,3000.00,USD,Income
