@@ -1,0 +1,20 @@
+Date,Description,Amount,Category,AccountName
+2023-10-01,Salary Deposit,2500.00,Income,Main Checking
+2023-10-01,Rent Payment,-1200.00,Housing,Main Checking
+2023-10-02,Groceries at StoreName,-75.50,Groceries,Credit Card X
+2023-10-03,Amazon Purchase electronics,-120.00,Shopping,Credit Card X
+2023-10-05,Student Loan Payment,-200.00,Loan Payment,Main Checking
+2023-10-05,Dinner Out,-45.00,Food/Drinks,Credit Card X
+2023-10-06,Transfer to Savings,500.00,Transfer,Savings Alpha
+2023-10-06,Transfer from Checking,-500.00,Transfer,Main Checking
+2023-10-07,Coffee at Starbucks,-5.75,Food/Drinks,Credit Card X
+2023-10-10,Electricity Bill,-65.00,Utilities,Main Checking
+2023-10-15,Salary Deposit,2500.00,Income,Main Checking
+2023-10-15,Mortgage Payment,-950.00,Housing,Main Checking
+2023-10-16,Investment Contribution,-300.00,Investment,Main Checking
+2023-10-16,Investment Fund Topup,300.00,Investment,Investment Fund
+2023-10-18,Online Subscription Renewal,-15.00,Miscellaneous,Credit Card X
+2023-10-20,Birthday Gift Received,100.00,Gift,Savings Alpha
+2023-11-01,Salary Deposit,2500.00,Income,Main Checking
+2023-11-01,Rent Payment,-1200.00,Housing,Main Checking
+2023-11-02,BigBox Groceries,-90.20,Groceries,Credit Card X
