@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to Your Personal Finance Dashboard!</h1>
+
+    <!-- Net Worth Summary -->
+    <h2>Net Worth Summary</h2>
+    <div class="net-worth-summary">
+        <p><strong>Total Assets:</strong> ${{ "%.2f"|format(total_assets if total_assets is defined else 0) }}</p>
+        <p><strong>Total Liabilities:</strong> ${{ "%.2f"|format(total_liabilities if total_liabilities is defined else 0) }}</p>
+        <h3><strong>Net Worth:</strong> ${{ "%.2f"|format(net_worth if net_worth is defined else 0) }}</h3>
+    </div>
+
+    <h2>Assets</h2>
+    <a href="{{ url_for('add_asset') }}" class="button">Add New Asset</a>
+    {% if assets %}
+        <ul>
+            {% for asset in assets %}
+                <li>
+                    <span>{{ asset.name }} ({{ asset.type }}): ${{ "%.2f"|format(asset.value) }}</span>
+                    <div>
+                        <a href="{{ url_for('edit_asset', asset_id=asset.id) }}" class="button button-edit">Edit</a>
+                        <form action="{{ url_for('delete_asset', asset_id=asset.id) }}" method="post" style="display:inline;">
+                            <input type="submit" value="Delete" class="button button-delete" onclick="return confirm('Are you sure you want to delete this asset?');">
+                        </form>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No assets added yet.</p>
+    {% endif %}
+
+    <h2>Liabilities</h2>
+    <a href="{{ url_for('add_liability') }}" class="button">Add New Liability</a>
+    {% if liabilities %}
+        <ul>
+            {% for liability in liabilities %}
+                <li>
+                    <span>{{ liability.name }} ({{ liability.type }}): ${{ "%.2f"|format(liability.amount_owed) }}</span>
+                    <div>
+                        <a href="{{ url_for('edit_liability', liability_id=liability.id) }}" class="button button-edit">Edit</a>
+                        <form action="{{ url_for('delete_liability', liability_id=liability.id) }}" method="post" style="display:inline;">
+                            <input type="submit" value="Delete" class="button button-delete" onclick="return confirm('Are you sure you want to delete this liability?');">
+                        </form>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No liabilities added yet.</p>
+    {% endif %}
+
+{% endblock %}

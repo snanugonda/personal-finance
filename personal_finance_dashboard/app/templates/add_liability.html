@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Add New Liability</h2>
+    <form method="post" class="form-styled">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" placeholder="e.g., Loan, Credit Card" required>
+        </div>
+        <div>
+            <label for="amount_owed">Amount Owed:</label>
+            <input type="number" step="0.01" id="amount_owed" name="amount_owed" required>
+        </div>
+        <div>
+            <input type="submit" value="Add Liability" class="button button-submit">
+        </div>
+    </form>
+    <a href="{{ url_for('index') }}" class="button">Back to Dashboard</a> {# Added class="button" for styling #}
+{% endblock %}

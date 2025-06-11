@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title }} - Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><a href="{{ url_for('index') }}">PFD</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('index') }}">Dashboard</a></li>
+            <!-- Add other global navigation links here if needed -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+      <div class="container">
+        {# Removed inline style, will be handled by CSS if footer p styling is added globally #}
+        <p>Personal Finance Dashboard &copy; 2023</p>
+      </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

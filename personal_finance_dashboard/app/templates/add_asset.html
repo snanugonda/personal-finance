@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Add New Asset</h2>
+    <form method="post" class="form-styled">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" placeholder="e.g., Bank Account, Stocks" required>
+        </div>
+        <div>
+            <label for="value">Value:</label>
+            <input type="number" step="0.01" id="value" name="value" required>
+        </div>
+        <div>
+            <input type="submit" value="Add Asset" class="button button-submit"> {# Added class="button" for consistency #}
+        </div>
+    </form>
+    <a href="{{ url_for('index') }}" class="button">Back to Dashboard</a> {# Added class="button" for styling #}
+{% endblock %}
